@@ -1,0 +1,30 @@
+{
+    "name": "Seslisözlük",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "img/icons/icon_032.png",
+        "default_popup": "page/popup.html"
+    },
+    "icons": {
+        "16": "img/icons/icon_016.png",
+        "48": "img/icons/icon_048.png",
+        "128": "img/icons/icon_128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["js/keyboard.js","js/content.js"]
+        }
+    ],
+    "options_page": "page/options.html",
+    "background_page": "page/background.html",
+    "permissions": [
+        "tabs",
+        "contextMenus",
+        "*://*.seslisozluk.com/*",
+        "*://*.seslisozluk.net/*",
+        "<all_urls>"
+    ],
+    "homepage_url": "http://dogancelik.github.com/seslisozluk-chrome/",
+    "update_url": "http://dogancelik.github.com/seslisozluk-chrome/update.xml"
+}

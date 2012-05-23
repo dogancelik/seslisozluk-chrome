@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Seçenekler</title>
+  <link rel="stylesheet" href="../css/options.css">
+  <script type="text/javascript" src="../js/shared.js"></script>
+  <script type="text/javascript" src="../js/options.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div id="logo"></div>
+      <nav>
+        <ul>
+          <li><a href="#secenekler">Seçenekler</a></li>
+          <li><a href="#hakkinda">Eklenti Hakkında</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="secenekler">
+      <h1>Seçenekler</h1>
+      <p>Buradan bu eklentinin ayarlarını değiştirebilirsiniz.</p>
+
+      <div>
+        <h2>Fare kısayolu</h2>
+        <p>Bir yazıya çift tıklayarak yazı üzerinde arama yapar.</p>
+
+        <label class="checkbox" for="aktif_fare"><input type="checkbox" id="aktif_fare">Fare kısayolunu aktifleştir.</label>
+
+        <h3>Ek tuşlar</h3>
+        <p>Bu tuşları aktifleştirirseniz ancak o tuşlara bastığınızda ve fare ile çift tıkladığınızda kelime araması yapar.</p>
+        <label for="fare_alt"><input type="checkbox" id="fare_alt"><i>Alt</i> tuşu</label>
+        <label for="fare_ctrl"><input type="checkbox" id="fare_ctrl"><i>Control</i> tuşu</label>
+        <label for="fare_shift"><input type="checkbox" id="fare_shift"><i>Shift</i> tuşu</label>
+      </div>
+
+      <div>
+        <h2>Klavye kısayolu</h2>
+        
+        <label class="checkbox" for="aktif_klavye"><input type="checkbox" id="aktif_klavye"> Klavye kısayolu ile aramayı aktifleştir (önce sayfada bir yazıyı seçmeniz gerekir).</label>
+
+        <h3>Klavye kombosu</h3>
+        <p>Burada belirlediğiniz tuşlara bastığınızda arama gerçekleşir.</p>
+        <input type="" id="klavye_kombosu">
+        <label for="klavye_kombosu"></label>
+
+        <h4>Örnekler</h4>
+        <ul>
+          <li><code>ctrl+q</code>, Control ve Q tuşlarına bastığınızda arama gerçekleşir</li>
+          <li><code>alt+p, q</code> Alt ve P tuşlarına aynı anda bastığınızda veya sadece Q tuşuna basarsanız arama gerçekleşir</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>İçerik menüsü</h2>
+        <p>Bir yazıyı seçtikten sonra yazıya sağ tıklayarak sonrasında sözlükte arama düğmesine basarak arama yapabilirsiniz.</p>
+
+        
+        <label class="checkbox" for="aktif_icerikmenu"><input type="checkbox" id="aktif_icerikmenu"> İçerik menüsündeki aramayı aktifleştir.</label>
+      </div>
+
+      <div>
+        <h2>Görünüm</h2>
+        <p>Buradan kutunun ve arama sonuçlarının nasıl gözükeceğini belirleyebilirsiniz.</p>
+
+        <h3>Kutu stili</h3>
+        <p>Buraya <abbr title="Cascading Style Sheets">CSS</abbr> kodu yazarak kutunuzu daha değişik bir şekile getirebilirsiniz.</p>
+        <textarea id="kutu_css" rows="8" cols="80"></textarea>
+        <p>Kutunun kendisi için <code>.seslisozluk-kutu</code> sınıfını kullanın.</p>
+
+        <h3>Diğer ayarlar</h3>
+        <ul>
+          <li><label for="kutu_timer"><input id="aktif_timer" type="checkbox">Kutu <input type="number" id="kutu_timer"> saniye sonra kendiliğinden kapansın</label></li>
+          <li><label for="kutu_click"><input type="checkbox" id="kutu_click">Kutu üstüne tıklanınca kapansın</label></li>
+          <li><label for="kutu_tek"><input type="checkbox" id="kutu_tek">Sayfada sadece tek bir tane kutu içinde arama yapılsın</label></li>
+        </ul>
+
+        <h3>Sözlük Sonuçları</h3>
+        <ul>
+          <li><label for="sonuc_duzcumle"><input id="sonuc_duzcumle" type="radio" name="sonuclar"> Sonuçları düz cümle içinde göster</label></li>
+          <li><label for="sonuc_liste"><input id="sonuc_liste" type="radio" name="sonuclar"> Sonuçları liste halinde göster</label></li>
+        </ul>
+      </div>
+
+      <div class="alt">
+        <input id="kaydet" type="button" value="Ayarları Kaydet">
+        <input id="sifirla" type="button" value="Ayarları Sıfırla">
+      </div>
+
+      <div id="sonuc"></div>
+    </section>
+
+    <section id="hakkinda">
+      <h2>Eklenti Hakkında</h2>
+
+      <p>Seslisözlük Chrome eklentisi <a href="http://dogancelik.com/" target="_blank">Doğan Çelik</a> tarafından yazılmıştır.</p>
+      <p>Daha fazla bilgi için: <a href="http://dogancelik.github.com/seslisozluk-chrome/" target="_blank">http://dogancelik.github.com/seslisozluk-chrome/</a></p>
+    </section>
+  </div>
+</body>
+</html>

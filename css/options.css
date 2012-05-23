@@ -1,0 +1,63 @@
+body {
+  font-family: Arial;
+  width: 700px;
+  margin: 0 auto;
+}
+
+#logo {
+  margin: 0 auto;
+  width: 180px;
+  height: 180px;
+  background: url(../img/seslisozluk.png) no-repeat center center;
+}
+
+code {
+  display: inline-block;
+  background-color: #eee;
+  padding: 3px;
+  margin: 3px;
+}
+
+.alt {
+  margin-top: 10px;
+  text-align: right;
+}
+
+#kaydet {
+  font-size: 1.2em
+}
+
+#sonuc {
+  margin: 5px 0;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.basarili {
+  background-color: #00bf00
+}
+
+.hata {
+  background-color: #7f0000
+}
+
+input[type=number] {
+  width: 50px
+}
+
+abbr {
+  border-bottom: 1px dotted #000
+}
+
+@-webkit-keyframes target {
+  from { background:#ffffff; }
+  50% { background:#ffff66; }
+  to { background:#ffffff; }
+ }
+
+:target {
+  -webkit-animation-name: target;
+  -webkit-animation-duration: 3s;
+}
+
